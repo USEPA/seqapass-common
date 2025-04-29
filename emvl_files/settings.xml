@@ -1,0 +1,32 @@
+<!-- The settings.xml file should contain at least this and be placed in the users' .m2 directory -->
+<settings>
+  <profiles>
+    <profile>
+      <id>compiler</id>
+        <properties>
+<!-- The two below work for iris1 -->
+          <JAVA_1_7_HOME>/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.261.x86_64</JAVA_1_7_HOME>
+          <JAVA_1_8_HOME>/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.372.b07-1.el7_9.x86_64</JAVA_1_8_HOME>
+          <JAVA_1_11_HOME>/usr/lib/jvm/java-11-openjdk-11.0.17.0.8-2.el7_9.x86_64</JAVA_1_11_HOME>
+<!-- This works for Tom's laptop -->
+
+<!--
+          <JAVA_1_8_HOME>C:\Program Files\Java\jdk-12.0.1\</JAVA_1_8_HOME>
+-->
+
+<!-- This works for Audrey's laptop -->
+<!--
+          <JAVA_1_8_HOME>C:\Users\awilke06\Downloads\JDK\jdk-12.0.2\</JAVA_1_8_HOME>
+-->
+        </properties>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>compiler</activeProfile>
+  </activeProfiles>
+</settings>
+
+
+
+
+

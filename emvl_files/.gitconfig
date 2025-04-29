@@ -1,0 +1,10 @@
+#-- Sample .gitconfig file .  Make any changes you like below, then place in <your home>/.config/git/config 
+[user]
+	name = Tom Transue
+	email = transue.tom@epa.gov
+	username = ttransue
+[core]
+	editor = vim
+        autocrlf = true
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	filemode = false

@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>gov.epa.seqapass.common</groupId>
+  <artifactId>seqapass-common</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SeqAPASS-common</name>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+       		<fork>true</fork>
+<!--
+        	<executable>C:\Users\awilke06\Downloads\JDK\jdk-12.0.2\bin\javac.exe</executable>
+                <executable>C:\Program Files\Java\jdk-12.0.1\bin\javac.exe</executable>
+                <executable>${JAVA_1_11_HOME}/bin/javac</executable>
+-->
+                <executable>${JAVA_1_8_HOME}/bin/javac</executable>
+
+          	<source>1.8</source>
+          	<target>1.8</target>
+        </configuration>
+      </plugin>
+       <plugin>
+      <artifactId>maven-assembly-plugin</artifactId>
+      <configuration>
+        <archive>
+          <manifest>
+            <mainClass>fully.qualified.MainClass</mainClass>
+          </manifest>
+        </archive>
+        <descriptorRefs>
+        
+          <descriptorRef>jar-with-dependencies</descriptorRef>
+        </descriptorRefs>
+        <appendAssemblyId>false</appendAssemblyId>
+      </configuration>
+    </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.jfree</groupId>
+  		<artifactId>jfreechart</artifactId>
+  		<version>1.0.19</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.apache.commons</groupId>
+  		<artifactId>commons-math3</artifactId>
+  		<version>3.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.primefaces</groupId>
+  		<artifactId>primefaces</artifactId>
+  		<version>7.0</version>
+  	</dependency>
+  </dependencies>
+</project>
